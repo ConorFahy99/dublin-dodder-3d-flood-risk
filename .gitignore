@@ -1,0 +1,25 @@
+# Large raster and LiDAR files — too big for GitHub
+01_data/raw/lidar/
+01_data/raw/raster/*.tif
+01_data/raw/raster/*.img
+01_data/processed/nDSM*.tif
+01_data/processed/*_depth.tif
+01_data/processed/*_zs.gpkg
+
+# QGIS lock and temporary files
+*.gpkg-wal
+*.gpkg-shm
+*.qgd
+*.qgz~
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.env
+.venv/
+
+# Large outputs (export locally, don't commit)
+04_outputs/**/*.pdf
