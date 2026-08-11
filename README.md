@@ -4,7 +4,7 @@
 
 A 3D flood exposure analysis of the River Dodder catchment in Dublin. It combines LiDAR terrain, OPW flood extents, and building footprints to model inundation depth per building and count exposed storeys, not just which buildings sit inside a flood zone.
 
-**[View the interactive 3D map →](link when available)**
+**[View the interactive 3D map →](https://conorfahy99.github.io/dublin-dodder-3d-flood-risk/04_outputs/deliverables/)**
 
 ---
 
@@ -22,13 +22,13 @@ First pass, lower and middle Dodder (the LiDAR-covered reach, about 71% of the 1
 
 ## How it works
 
-**LiDAR DTM/DSM** — national LiDAR gives a bare-earth terrain model and a surface model. Building heights come from the normalised surface (DSM minus DTM).
+**LiDAR DTM/DSM.** National LiDAR gives a bare-earth terrain model and a surface model. Building heights come from the normalised surface (DSM minus DTM).
 
-**OPW CFRAM flood data** — modelled flood extents and, where available, depth grids for the 10%, 1%, and 0.1% annual exceedance probability events.
+**OPW CFRAM flood data.** Modelled flood extents and, where available, depth grids for the 10%, 1%, and 0.1% annual exceedance probability events.
 
-**Depth grid** — water surface elevation minus terrain within the flood extent gives depth per cell. Each building is attributed with the depth at its footprint and the number of storeys inundated.
+**Depth grid.** Water surface elevation minus terrain within the flood extent gives depth per cell. Each building is attributed with the depth at its footprint and the number of storeys inundated.
 
-**3D output** — buildings extruded to real height and shaded by flood depth, exported as an interactive web scene.
+**3D output.** Buildings extruded to real height and shaded by flood depth, exported as an interactive web scene.
 
 ---
 
@@ -46,7 +46,7 @@ CRS: EPSG:2157 (Irish Transverse Mercator) throughout, so x, y, and z are all in
 
 ```
 ├── 01_data/
-│   ├── raw/                  # Source data — never edit these files
+│   ├── raw/                  # Source data, never edit these files
 │   └── processed/            # Outputs of processing scripts
 ├── 02_qgis/                  # QGIS project file
 ├── 03_analysis/              # Python scripts
