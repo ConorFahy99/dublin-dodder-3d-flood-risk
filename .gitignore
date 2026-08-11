@@ -1,12 +1,11 @@
-# Large raster and LiDAR files — too big for GitHub
-01_data/raw/lidar/
-01_data/raw/raster/*.tif
-01_data/raw/raster/*.img
-01_data/processed/nDSM*.tif
-01_data/processed/*_depth.tif
-01_data/processed/*_zs.gpkg
+# Data is large (3+ GB) and reproducible from the scripts in 03_analysis.
+# Never commit it. The README and method sheet explain how to regenerate it.
+01_data/
 
-# QGIS lock and temporary files
+# Caches
+cache/
+
+# QGIS lock and temp files
 *.gpkg-wal
 *.gpkg-shm
 *.qgd
@@ -21,5 +20,5 @@ __pycache__/
 .env
 .venv/
 
-# Large outputs (export locally, don't commit)
+# Large PDF exports (export locally, don't commit)
 04_outputs/**/*.pdf

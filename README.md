@@ -10,11 +10,13 @@ A 3D flood exposure analysis of the River Dodder catchment in Dublin. It combine
 
 ## Findings
 
+First pass, lower and middle Dodder (the LiDAR-covered reach, about 71% of the 1% flood extent).
+
 | | |
 |---|---|
-| **—** | Buildings exposed (1% annual flood) |
-| **—** | Population within modelled flood extent |
-| **—** | Buildings with ground floor fully inundated |
+| **2,254** | Buildings within the 1% flood extent |
+| **432** | Buildings with damaging ground-floor depth (over 0.3 m) |
+| **1.04 km²** | Land flooded, median depth 0.22 m, max 10.1 m at the channel |
 
 ---
 
