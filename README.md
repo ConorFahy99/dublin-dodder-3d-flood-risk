@@ -4,7 +4,7 @@
 
 A 3D flood exposure analysis of the River Dodder catchment in Dublin. It combines LiDAR terrain, OPW flood extents, and building footprints to model inundation depth per building and count exposed storeys, not just which buildings sit inside a flood zone.
 
-**[View the interactive 3D map →](link when available)**
+**[View the interactive 3D map →](https://conorfahy99.github.io/dublin-dodder-3d-flood-risk/04_outputs/deliverables/)**
 
 ---
 
