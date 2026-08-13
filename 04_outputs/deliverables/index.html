@@ -15,6 +15,7 @@
 <script src="./threejs/OrbitControls.js"></script>
 <script src="./threejs/ViewHelper.js"></script>
 <script src="./Qgis2threejs.js"></script>
+<script src="./meshline/THREE.MeshLine.js"></script>
 </head>
 <body>
 <div id="view">
@@ -129,5 +130,21 @@ app.loadSceneFile("./data/index/scene.json", function (scene) {
 
 });
 </script>
+<!-- custom depth legend (added after export) -->
+<style>
+#depthlegend{position:fixed;right:12px;bottom:12px;z-index:10000;background:rgba(255,255,255,0.93);color:#1b1b1b;font:13px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;padding:10px 13px;border-radius:6px;box-shadow:0 1px 5px rgba(0,0,0,0.35);}
+#depthlegend .dl-title{font-weight:700;margin-bottom:7px;}
+#depthlegend .dl-row{display:flex;align-items:center;margin:3px 0;}
+#depthlegend .dl-sw{width:16px;height:16px;border-radius:3px;margin-right:8px;border:1px solid rgba(0,0,0,0.25);}
+#depthlegend .dl-line{width:16px;height:0;border-top:3px solid #6498d2;margin-right:8px;}
+</style>
+<div id="depthlegend">
+  <div class="dl-title">1% flood depth on buildings</div>
+  <div class="dl-row"><span class="dl-sw" style="background:#969696"></span>Dry, not flooded</div>
+  <div class="dl-row"><span class="dl-sw" style="background:#a6cee3"></span>Under 0.3 m</div>
+  <div class="dl-row"><span class="dl-sw" style="background:#3d8ce7"></span>0.3 to 1 m</div>
+  <div class="dl-row"><span class="dl-sw" style="background:#2a6fdb"></span>Over 1 m</div>
+  <div class="dl-row"><span class="dl-line"></span>River Dodder</div>
+</div>
 </body>
 </html>
